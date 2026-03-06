@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   enable-background="new 0 0 32 32"
+   height="48"
+   id="Layer_1"
+   version="1.0"
+   viewBox="0 0 48 48"
+   width="48"
+   xml:space="preserve">
+  <metadata id="metadata25">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+	<dc:format>image/svg+xml</dc:format>
+	<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	<dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs23" />
+  <g id="g4180">
+    <rect
+       y="0.13559322"
+       x="-0.40677965"
+       height="48.135593"
+       width="48.81356"
+       id="rect3353"
+       style="fill:#3c948b;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <g id="g4157">
+      <path
+         style="fill:#ffffff;fill-opacity:1"
+         id="path5"
+         d="m 24.425,26.415 c -0.897,-0.634 -2.609,-2.176 -2.609,-3.083 0,-1.062 0.303,-1.586 1.902,-2.835 1.638,-1.281 2.799,-3.38 2.799,-5.476 C 26.517,12.529 25.405,11 23.321,9 l 3.144,0 2.218,-1 c 0,0 -7.434,0 -9.913,0 -4.445,0 -8.626,3.362 -8.626,7.261 0,3.986 3.029,7.201 7.551,7.201 0.314,0 0.619,-0.008 0.919,-0.028 -0.294,0.56 -0.503,1.192 -0.503,1.849 0,1.108 0.596,2.006 1.348,2.74 -0.567,0 -1.118,0.016 -1.717,0.016 C 12.235,27.038 8,30.543 8,34.179 8,37.758 12.645,40 18.148,40 c 6.276,0 9.741,-3.562 9.741,-7.142 0.001,-2.871 -0.847,-4.589 -3.464,-6.443 z m -5.296,-4.967 c -2.555,-0.076 -4.981,-2.857 -5.422,-6.209 -0.44,-3.355 1.272,-5.922 3.824,-5.846 2.554,0.078 4.981,2.768 5.423,6.122 0.441,3.355 -1.273,6.009 -3.825,5.933 z m -1.001,16.967 c -3.805,0 -6.553,-2.407 -6.553,-5.301 0,-2.834 3.408,-5.195 7.214,-5.154 0.888,0.01 1.715,0.152 2.465,0.395 2.066,1.438 3.548,2.25 3.968,3.885 0.076,0.332 0.121,0.675 0.121,1.023 0,2.892 -1.865,5.152 -7.215,5.152 z" /><polygon
+         style="fill:#ffffff;fill-opacity:1"
+         id="polygon7"
+         points="20,16 25,16 25,21 27,21 27,16 32,16 32,14 27,14 27,9 25,9 25,14 20,14 "
+         transform="translate(8,8)" />
+    </g>
+  </g>
+</svg>

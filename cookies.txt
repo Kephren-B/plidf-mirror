@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.plidf.fr	TRUE	/	FALSE	1999999999	PHPSESSID	ee5246ba63cac79e1d28577f0c55342a
+.sourceforge.net	TRUE	/	FALSE	1999999999	__cf_bm	qrykqsa2.kikocOAzYoSMrlVToL9mHFHNP.tGoglyE8-1772811970-1.0.1.1-PAFUcIBlbkchci2U7ikCSQpG8LFfvF0N1uVny6SdrhwYtspcNmfFslh8Ue7CSuQ_VLCpr9V6K_GqSjTzm9LJKdV4dL.l8EJx9.urK8KxkDs
+sodipodi.sourceforge.net	TRUE	/	FALSE	1999999999	SameSite	None
+
