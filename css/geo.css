@@ -1,0 +1,29 @@
+#closest-station-table td, #closest-station-table th{
+	text-align:left;
+	vertical-align:middle;
+	padding-right:5px;
+}
+
+@media(max-width:700px){
+	.logo-line{
+		display:none;
+	}
+}
+
+@media(max-width:470px){
+	#closest-station-table tr :nth-child(6){
+		display:none;
+	}
+}
+
+@media(max-width:410px){
+	#closest-station-table tr :nth-child(3){
+		display:none;
+	}
+}
+
+@media(max-width:370px){
+	#closest-station-table tr :nth-child(4){
+		display:none;
+	}
+}

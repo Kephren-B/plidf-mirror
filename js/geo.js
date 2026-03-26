@@ -19,7 +19,7 @@
 			p.coords.heading = param.coords.heading;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open('POST','/ajax.php?ac=geo&a=closestStation');
+			xhr.open('POST','ajax.php?ac=geo&a=closestStation');
 			xhr.onload = function(){
 				try{
 					var ans = JSON.parse(this.responseText);

@@ -1,0 +1,17 @@
+.panel-info.panel-hide *{
+  opacity:0;
+  transition:opacity 3s linear;
+}
+
+.panel-info *{
+  opacity:1;
+  transition:opacity 3s linear;
+}
+
+.panel-info{
+    transition:height 2s linear;
+}
+
+.home-more-div{
+  margin-top:2ex;
+}

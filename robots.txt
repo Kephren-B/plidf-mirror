@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /medias/qrcodes/
+Allow: /medias/plans/*.jpg$
+Allow: /medias/img/*.jpg$
+
+User-Agent: MJ12bot
+Disallow: /
+
+Sitemap: http://www.plidf.fr/sitemap.xml
+
+Crawl-Delay: 10

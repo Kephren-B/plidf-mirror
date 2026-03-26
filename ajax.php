@@ -1,0 +1,1 @@
+{"block_count":"0","log":"Topic 101h9j3\nSELECT COUNT(*) AS c FROM comment_blocks WHERE topic_uid = :uid\nNo comments"}

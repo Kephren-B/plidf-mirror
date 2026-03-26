@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Accueil | Le plan Ile-de-France</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="website" property="og:type"/>
+<meta content="Le Plan Ile-de-France" property="og:site_name"/>
+<meta content="Le Plan-Ile-de-France - Accueil" property="og:title"/>
+<meta content="" property="og:url"/>
+<meta content="Le Plan Ile-de-France: une initiative citoyenne pour l'amélioration des transports en commun" name="description"/>
+<meta content="Le Plan Ile-de-France: une initiative citoyenne pour l'amélioration des transports en commun" property="og:description"/>
+<link href="layouts\main\css\layout.css" rel="stylesheet"/>
+<link href="layouts\main\css\graphics.css" rel="stylesheet"/>
+<link href="layouts\home\css\layout.css" rel="stylesheet"/>
+<link href="layouts\home\css\graphics.css" rel="stylesheet"/>
+<link href="index.php" rel="canonical"/>
+</head>
+<body>
+<!--
+
+ start ok -->
+<div id="all">
+<header>
+<div>
+<div style="font-size:300%;margin-bottom:10px;text-decoration:none;">
+<a href="index.php"><span style="color:#313131;"><em>Le</em>Plan</span><wbr/><span style="color:#3C948B"><strong>Ile</strong><em>de</em><strong>France</strong></span></a>
+</div>
+<div style="border-bottom:2px solid #D2D6D5;margin-bottom:10px;padding-bottom:5px;">
+<em>Une initiative citoyenne pour l'amélioration des transports en commun.</em>
+</div>
+</div>
+<nav role="navigation">
+<ul class="menu" id="">
+<li class=""><a href="infos\introduction.php" title="L'initiative Plan-Île-de-France planifier les transports en commun de demain">Introduction</a>
+<ul>
+<li class=""><a href="infos\objectif_emplois.php" title="Créer des milliers d'emploi pour relancer l’économie avec les chantiers de transports en commun">Emplois</a></li>
+<li class=""><a href="infos\objectif_environnement.php" title="Lutter contre la pollution atmosphérique et sonore, économiser des combustibles fossiles, préparer la transition énergétique en étendant le réseau de transports en commun">Environnement</a></li>
+<li class=""><a href="infos\objectif_confort.php" title="Améliorer le confort dans les trajets travail domicile par l'extension du réseau pour soulager les infrastructures existantes, chemin de fer et routes.">Confort</a></li>
+<li class=""><a href="infos\financement.php" title="Financement des grands chantiers du Plan Île-de-France">Financement</a></li>
+</ul></li>
+<li class=""><a href="infos\nouvelles_lignes.php" title="Nos proposition de nouvelles lignes de chemin de fer pour l'Île-de-France">Nouvelles lignes</a>
+<ul>
+<li class=""><a href="ligne\rer_f.php" title="La gare Saint-Lazare et la gare Montparnasse reliée par un nouveau RER à l'aéroport d'Orly ">RER F</a></li>
+<li class=""><a href="ligne\rer_g.php" title="La gare Montparnasse et la gare de Lyon reliées par un nouveau RER à l'aéroport de Roissy">RER G</a></li>
+<li class=""><a href="infos\tangentielles.php" title="Un nouveau service pour se déplacer en grande banlieue sans passer par Paris">Les tangentielles</a></li>
+<li class=""><a href="infos\cergyval.php" title="Desservir l'agglomération de Cergy-Pontoise par un réseau de VAL">CergyVal</a></li>
+<li class=""><a href="ligne\m_nord.php" title="Ligne 13 débranchée les lignes bis fusionnées ou un réseau de métro amélioré dans les arrondissement nord de Paris.">Metro nord</a></li>
+<li class=""><a href="ligne\m_sud.php" title="Une nouvelle ligne pour accélérer les déplacement dans le sud de Paris">Metro Sud</a></li>
+<li class=""><a href="ligne\m_forts.php" title="Un métro léger pour relier le plateau de Belleville à Saint-Denis">Métro des forts</a></li>
+<li class=""><a href="infos\gpe.php" title="L'intégration des projets du Grand Paris Express dans notre site.">Grand Paris Express</a></li>
+<li class=""><a href="ligne\rer_pce.php" title="Petite Ceinture Express, un transport rapide pour soulager le cœur du réseau de métro et de bus à Paris tout en offrant une alternative au boulevard périphérique.">Petite Ceinture Express</a></li>
+<li class=""><a href="ligne\rer_aex.php" title="Un service pour relier les principaux pôles de Paris aux grand aéroports de l'Île-de-France.">Aéroports express</a></li>
+</ul></li>
+<li class=""><a href="index\prolongements.php" title="Voir tous les projets d'extension ou de création de lignes de métro, RER ou tramway de notre site">Extensions</a></li>
+<li class=""><a href="index\poles.php" title="Les poles de transports">Poles de transports</a>
+<ul>
+<li class=""><a href="infos\rer_autoroute.php" title="Correspondances RER Autoroutes">RER - Autoroutes</a></li>
+</ul></li>
+<li class=""><a href="geo.php" title="Trouvez sur notre site les gares les plus proche de chez vous ou votre commune de résidence">Pres de chez moi</a>
+<ul>
+<li class=""><a href="index\communes.php" title="">Communes</a></li>
+<li class=""><a href="index\gares.php" title="">Gares et stations</a></li>
+</ul></li>
+<li class=""><a href="infos\agir.php" title="Les transports de demain se pensent aujourd'hui, soyez de la partie.">Agir</a>
+<ul>
+<li class=""><a href="index\associations.php" title="Associations pour la promotion du plan ile de France">Associations</a></li>
+</ul></li>
+</ul>
+</nav>
+</header> <main>
+<table>
+<tbody>
+<tr>
+<td class="panel panel-info panel-project">
+<div class="panel-heading">
+<h3 class="panel-title">Demain le <img height="25" src="medias\logos\logo_rer.svg" title="RER" width="25"/><a href="ligne\rer_b.php"><img height="25" src="medias\logos\rer_B.svg" title="RER B" width="25"/></a> à <a href="gare\h58mfk-aeroville.php" target="_blank">Aéroville</a></h3>
+</div>
+<div class="panel-body">
+<div>
+          Le remaniement de roissy consistera à déplacer le terminus du RER B de la gare de l'aérogare 2 TGV (intégrée au service aéroport express) à la gare CDG 3.         </div>
+<div class="home-more-div">
+          Plus d'infos sur le projet <a href="prol\e09j54-rerb-roissy.php" target="_blank">RER B Roissy</a> </div>
+</div> </td>
+<td class="panel panel-info panel-commune">
+<div class="panel-heading">
+<h3 class="panel-title">Quoi de prévu pour <a href="commune\Mareuil-les-Meaux.php" target="_blank">Mareuil-les-Meaux</a> ?</h3>
+</div>
+<div class="panel-body">
+         2 projets et 1 station. Découvrez ce qui est prévu pour la <a href="commune\Mareuil-les-Meaux.php" target="_blank">commune de Mareuil-les-Meaux</a> dans le plan Île-de-France.         </div> </td>
+</tr>
+<tr>
+<td class="panel panel-info panel-links">
+<div class="panel-heading">
+<h3 class="panel-title">Ils en parlent</h3>
+</div>
+<div class="panel-body">
+<p> Si vous tenez un blog, une web radio, une publication, parlez du plan Ile de France et nous relayerons votre tribune sur notre plateforme tout en vous faisant de la publicite. </p>
+</div> </td>
+<td class="panel panel-info panel-participate">
+<div class="panel-heading">
+<h3 class="panel-title">Publiez vos propositions architecturales</h3>
+</div>
+<div class="panel-body">
+<p> Le plan Ile de France presente plus de 300 nouvelles gares et plus d'une dizaine d'ouvrages d'art. <strong>Architectes</strong>, profitez de cette plateforme pour faire de la publicite pour votre cabinet. <strong>Etudiants en architecture</strong>, faites d'une des stations du plan Ile-de-France un projet pour votre cursus. </p>
+</div> </td>
+</tr>
+</tbody>
+</table>
+</main>
+<footer>
+<ul class="" id="bottom-menu-ul">
+<li class=""><a href="infos\about.php" title="">À propos</a></li>
+<li class=""><a href="legal.php" title="">Mentions légales</a></li>
+<li class=""><a href="privacy.php" title="">Confidentialité</a></li>
+<li class=""><a href="contact.php" title="">Contact</a></li>
+<li class=""><a href="sitemap.php" title="">Plan du site</a></li>
+<li class=""><a href="rss.php" title="Tous nos flux RSS et abonnement a notre liste de diffusion">RSS</a></li>
+<li class=""><a href="dons.php" title="">Dons</a></li>
+</ul>
+<div style="clear:both;"></div>
+</footer>
+</div>
+<!-- -->
+<pre>
+</pre>
+<!-- -->
+<script>
+  var qq = false || 
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'_script','//www.google-analytics.com/analytics.js','ga'); 
+  ga('create', 'UA-74421816-1', 'auto'); 
+  ga('send', 'pageview'); 
+  </script>
+<script>
+var refreshDelay = 15000;
+var Comments = Comments || {
+  ajaxUrl:'ajax.php'
+};
+
+
+var refreshHomeInterval = window.setInterval(function(){ refreshHome() },refreshDelay);
+function refreshHome(){
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET',Comments.ajaxUrl + '?ac=main&action=refreshHome');
+  xhr.onload = function(){
+    var log = false;
+    try{
+      var ans = JSON.parse(this.responseText);
+      if(ans.prol){
+	var panel1 = document.querySelector('.panel-project');
+	panel1.classList.add('panel-hide');
+	window.setTimeout(function(){
+	  var title1 = panel1.querySelector('.panel-title');
+	  title1.innerHTML = ans.prol.title;
+	  var body1 = panel1.querySelector('.panel-body');
+	  var div1 = body1.firstElementChild;
+	  div1.innerHTML = ans.prol.shortDesc;
+	  var hmd = div1.nextElementSibling;
+	  hmd.innerHTML = ans.prol.moreInfos;
+	  panel1.classList.remove('panel-hide');
+	},2300);
+      }
+      if(ans.commune){
+	var panel = document.querySelector('.panel-commune');
+	panel.classList.add('panel-hide');
+	window.setTimeout(function(){
+	  var title = panel.querySelector('.panel-title');
+	  title.innerHTML = ans.commune.title;
+	  var body = panel.querySelector('.panel-body');
+	  var div = body.firstElementChild;
+	  body.innerHTML = ans.commune.shortDesc + ans.commune.moreInfos;
+	  //var hmd = div.nextElementSibling;
+	  //div.innerHTML += ans.commune.moreInfos;
+	  panel.classList.remove('panel-hide');
+	},2300);
+      }
+	  if(ans.stop){
+		clearInterval(refreshHomeInterval);
+	  }
+    } catch(e){
+      console.log(e);
+      log = this.responseText;
+    }
+    if(log){
+    var pre = document.createElement('pre');
+    pre.innerHTML = log;
+    console.log(pre.textContent);
+    }
+  }
+  xhr.send();	
+}
+</script>
+</body>
+</html>

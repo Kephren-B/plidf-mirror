@@ -2,7 +2,6 @@ var CommentManager = CommentManager || new (function(){
   this.call = 'CommentManager';
   this.ajaxUrl = '/ajax.php';
   const max_level_answer = 5;
-  window.cm = this;
   var parent = this;
   
   this.displayCommentBlock = function(block,cont){    
@@ -88,8 +87,6 @@ var CommentManager = CommentManager || new (function(){
   }
   
   this.displayCommentForm = function(cont,topic_uid,block_id,parent_id,message,message_class){
-	if(cont)
-	  return;
     cont.innerHTML = '';
     if(block_id >0){
       var h6 = document.createElement('h6');
@@ -243,7 +240,7 @@ var CommentManager = CommentManager || new (function(){
       cancel.value='Annuler';
       cancel.name= 'annuler';
       cancel.onclick = function(){
-        parent.cancelComment(fform);
+	parent.cancelComment(fform);
       }
     }
   }
@@ -285,15 +282,15 @@ var CommentManager = CommentManager || new (function(){
     xhr.onload = function(ev){
       var log = false;
       try{
-		var ans = JSON.parse(this.responseText);
-		if(ans.blocks){
-		  for(var i = 0;i<ans.blocks.length;i++){
-			var block = ans.blocks[i];
-			parent.displayCommentBlock(block);
-		  }
-		}
+	var ans = JSON.parse(this.responseText);
+	if(ans.blocks){
+	  for(var i = 0;i<ans.blocks.length;i++){
+	    var block = ans.blocks[i];
+	    parent.displayCommentBlock(block);
+	  }
+	}
       } catch(e){
-      }
+    }
 	}
 	var fd = new FormData();
 	var token = '';
@@ -424,12 +421,3 @@ var CommentManager = CommentManager || new (function(){
     xhr.send(fd);
   } 
 });
-
-window.onload = function(){
-    if(!document.cookie || !document.cookie.includes('rgpd=ok')){
-var rgpd = document.createElement('div');
-rgpd.style = "background-color:#1D4743;position:fixed;opacity:1;text-align:center;bottom:5px;color:white;z-index:1;padding:5px;width:98%;margin:0 1% 0 1%;";
-document.body.appendChild(rgpd);
-rgpd.innerHTML = '<small style="margin-right:50px;">Ce site internet utilise des cookies anonymes pour des mesures d\'audience. En poursuivant votre navigation sur notre site, vous acceptez leur utilisation.</small><span style="float:right;border:solid 1px white;cursor:pointer;padding:2px;margin-right:5px;" onclick="this.parentNode.remove();document.cookie = \'rgpd=ok; expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;\'" title="Fermer ce bandeau">X</span>';
-    }
-}
