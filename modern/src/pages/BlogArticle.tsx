@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useDataset } from "../data/dataset";
-import { reseauOf } from "../network";
+import { reseauOf, displayName } from "../network";
 import { logoSrc } from "../logos";
 
 export default function BlogArticle() {
@@ -30,7 +30,6 @@ export default function BlogArticle() {
 
   const reseau = reseauOf(line);
   const n = line.stations.length;
-  const hasIntro = !!line.subtitle;
   const hasProse = (line.content?.length ?? 0) > 0 || !!line.description;
   const hasProjets = (line.relatedProjects?.length ?? 0) > 0;
 
@@ -46,7 +45,7 @@ export default function BlogArticle() {
       <div className="wiki-toolbar">
         <nav aria-label="Fil d'Ariane">
           <Link to="/">Accueil</Link> <span>/</span> <Link to="/blog">Blog</Link>{" "}
-          <span>/</span> <span aria-current="page">{line.name}</span>
+          <span>/</span> <span aria-current="page">{displayName(line)}</span>
         </nav>
         <div className="wiki-tabs" aria-hidden="true">
           <span className="active">Article</span>
@@ -57,13 +56,13 @@ export default function BlogArticle() {
       </div>
 
       <header className="wiki-head">
-        <h1>{line.name}</h1>
+        <h1>{displayName(line)}</h1>
         <p className="wiki-sub">
           {reseau} · article du blog « Le plan Île-de-France »
         </p>
       </header>
 
-      {hasIntro && <p className="wiki-accroche">{line.subtitle}</p>}
+      {line.subtitle && <p className="wiki-accroche">{line.subtitle}</p>}
 
       <div className="wiki-grid">
         <aside className="infobox">
@@ -71,7 +70,7 @@ export default function BlogArticle() {
             {logoSrc(line.uid) && (
               <img className="line-logo" src={logoSrc(line.uid)!} alt="" aria-hidden="true" />
             )}
-            <strong>{line.name}</strong>
+            <strong>{displayName(line)}</strong>
           </header>
           <dl className="infobox-body">
             <div>
@@ -170,7 +169,9 @@ export default function BlogArticle() {
             <ul className="wiki-liens">
               <li>
                 Fiche technique détaillée :{" "}
-                <Link to={`/ligne/${encodeURIComponent(line.uid)}`}>{line.name}</Link>
+                <Link to={`/ligne/${encodeURIComponent(line.uid)}`}>
+                  {displayName(line)}
+                </Link>
               </li>
               <li>
                 Index du blog : <Link to="/blog">toutes les lignes</Link>

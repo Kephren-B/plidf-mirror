@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDataset } from "../data/dataset";
-import { groupeLignes } from "../network";
+import { compareLineNames, displayName, groupeLignes } from "../network";
 import { logoSrc } from "../logos";
 import type { Ligne } from "../types";
 
@@ -23,7 +23,9 @@ export default function Home() {
   }
 
   const c = data.meta.counts;
-  const lignes = [...data.lignes].sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  const lignes = [...data.lignes].sort((a, b) =>
+    compareLineNames({ name: displayName(a) }, { name: displayName(b) })
+  );
   const groupes = groupeLignes(lignes);
 
   return (
@@ -96,7 +98,7 @@ function LineCard({ line }: { line: Ligne }) {
     <Link to={`/ligne/${encodeURIComponent(line.uid)}`} className="card line-card">
       <div className="line-row">
         {src && <img className="line-logo" src={src} alt="" aria-hidden="true" />}
-        <h3>{line.name}</h3>
+        <h3>{displayName(line)}</h3>
         <span className="line-count">{n > 0 ? `${n} stations` : "—"}</span>
       </div>
       <p className="line-meta">

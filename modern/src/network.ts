@@ -18,7 +18,22 @@ const OVERRIDES: Record<string, Reseau> = {
   m_ov: "Autres", // Orlyval
   m_v: "Autres", // Liaison Buc - Bougival
   m_forts: "Autres", // Métro des forts (grand projet)
+  tg_ssd: "Tramway", // Tangentielle Seine-Saint-Denis = T11
+  tg_ess: "Tramway", // Tangentielle Essonne = T12
+  tg_y: "Tramway", // Tangentielle Yvelines = T13
 };
+
+/** Noms d'affichage pour certaines lignes (tangentielles = tram-train T11/T12/T13). */
+export const DISPLAY_NAMES: Record<string, string> = {
+  tg_ssd: "T11",
+  tg_ess: "T12",
+  tg_y: "T13",
+};
+
+/** Nom lisible d'une ligne (prend en compte les surcharges). */
+export function displayName(line: Pick<Ligne, "uid" | "name">): string {
+  return DISPLAY_NAMES[line.uid] ?? line.name;
+}
 
 /** Ordre d'affichage des groupes. */
 export const RESEAUX: Reseau[] = [
@@ -30,6 +45,12 @@ export const RESEAUX: Reseau[] = [
   "Cergyval",
   "Autres",
 ];
+
+/** Comparateur naturel (numérique) pour les noms de lignes : Métro 2 avant Métro 10. */
+const collator = new Intl.Collator("fr", { numeric: true, sensitivity: "base" });
+export function compareLineNames(a: { name: string }, b: { name: string }): number {
+  return collator.compare(a.name, b.name);
+}
 
 function reseauOfPrefix(uid: string): Reseau | null {
   if (uid.startsWith("m_")) return "Métro";

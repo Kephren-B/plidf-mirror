@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useDataset } from "../data/dataset";
 import { logoSrc } from "../logos";
+import { displayName } from "../network";
 import type { LineRef } from "../types";
 
 export default function LigneDetail() {
@@ -38,11 +39,11 @@ export default function LigneDetail() {
       <nav className="breadcrumb" aria-label="Fil d'Ariane">
         <Link to="/">Accueil</Link>
         <span>·</span>
-        <span aria-current="page">{line.name}</span>
+        <span aria-current="page">{displayName(line)}</span>
       </nav>
       <div className="detail-heading">
         {logo && <img className="line-logo line-logo-lg" src={logo} alt="" aria-hidden="true" />}
-        <h1>{line.name}</h1>
+        <h1>{displayName(line)}</h1>
       </div>
       <div className="detail-meta">
         {line.mode && <span className="badge">{line.mode}</span>}

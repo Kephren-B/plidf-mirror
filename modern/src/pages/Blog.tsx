@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDataset } from "../data/dataset";
-import { groupeLignes } from "../network";
+import { compareLineNames, displayName, groupeLignes } from "../network";
 import { logoSrc } from "../logos";
 
 export default function Blog() {
@@ -17,7 +17,12 @@ export default function Blog() {
   if (!data) return <p className="notice">Aucune donnée.</p>;
 
   const groupes = groupeLignes(
-    [...data.lignes].sort((a, b) => a.name.localeCompare(b.name, "fr"))
+    [...data.lignes].sort((a, b) =>
+      compareLineNames(
+        { name: displayName(a) },
+        { name: displayName(b) }
+      )
+    )
   );
 
   return (
@@ -46,7 +51,7 @@ export default function Blog() {
                   {logoSrc(l.uid) && (
                     <img className="line-logo" src={logoSrc(l.uid)!} alt="" aria-hidden="true" />
                   )}
-                  <h3>{l.name}</h3>
+                  <h3>{displayName(l)}</h3>
                 </div>
                 <p className="line-meta blog-excerpt">
                   {l.description && l.description.length > 0
